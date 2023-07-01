@@ -6,7 +6,10 @@ from googleapiclient.errors import HttpError
 
 
 def respond(gmail_id, creds, reply_message, time_interval=[45, 120]):
-    """Respond to emails in the inbox of the Gmail account with the given GmailID using the credentials from the JSON file."""
+    """
+    Checks for unread emails in the inbox, and if they are not already been replied to then replies them with the reply_message.
+    This is repeated after every 45 to 120[or as specified] seconds later.
+    """
     try:
         print("Checking your emails...")
         # Create Gmail API service instance
