@@ -23,6 +23,8 @@ The `main` function in `vacation_responder.py` executed two functions
 
 All the communication from gmail in these functions are done using the API methods provided by Google API python libraries. Please do the read the [documentation](https://developers.google.com/gmail/api/guides) to further understand it.
 
+To further understand the code and see its functionality, watch the demo video: [DEMO_VIDEO]( https://drive.google.com/file/d/1ZusdFS9_P5UiVL2lsPtZGmUPWyjFbLi7/view?usp=sharing)
+
 # Prerequisites
 
 - [Python](https://www.python.org/downloads/)
