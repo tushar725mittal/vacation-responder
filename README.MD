@@ -1,6 +1,6 @@
 # Vacation Responder
 
-A python script to RSVP your attendence on meetup.com for events of the your groups.
+A python script to automatically respond to new emails in a gmail account.
 
 ## Problem Statement
 
