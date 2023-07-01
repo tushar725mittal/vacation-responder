@@ -60,14 +60,8 @@ def respond(gmail_id, creds, reply_message, time_interval=[45, 120]):
 
                 sender = [i["value"] for i in headers if i["name"].lower() == "from"][0]
 
-                # Check if the email has already been replied to
+                # Get the thread ID of the email
                 email_thread_id = email_data["threadId"]
-                thread_data = (
-                    service.users()
-                    .threads()
-                    .get(userId=gmail_id, id=email_thread_id)
-                    .execute()
-                )
 
                 # Check if the email has already been replied to be checking if the replied label has been applied
                 replied = label_id in email_data["labelIds"]
